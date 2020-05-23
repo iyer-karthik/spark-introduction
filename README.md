@@ -87,4 +87,14 @@ In the reduce step, the values with the same keys are combined together.
 
 While Spark doesn't implement MapReduce, you can write Spark programs that behave in a similar way to the map-reduce paradigm. 
 
-## Disclaimer: Notes scribed from Udacity's course on Introduction to Spark
+
+### What is Spark?
+At its core, Spark is a generic **engine** for processing large amounts of data. Spark is written in Scala and runs on the JVM. Spark has built-in components for processing streaming data, machine learning, graph processing, and even interacting with data via SQL.
+
+### What is PySpark?
+Spark is implemented in Scala, a language that runs on the JVM, so how can you access all that functionality via Python?
+
+PySpark is the answer. You can think of PySpark as a Python-based wrapper on top of the Scala API. PySpark communicates with the Spark Scala-based API via the Py4J library. Py4J isn’t specific to PySpark or Spark. Py4J allows any Python program to talk to JVM-based code.
+
+In a Python context, think of PySpark has a way to handle parallel processing without the need for the threading or multiprocessing modules. All of the complicated communication and synchronization between threads, processes, and even different CPUs is handled by Spark.
+## Disclaimer: Notes scribed from Udacity's course on Introduction to Spark and [this](https://realpython.com/pyspark-intro/) website

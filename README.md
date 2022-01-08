@@ -97,4 +97,3 @@ Spark is implemented in Scala, a language that runs on the JVM, so how can you a
 PySpark is the answer. You can think of PySpark as a Python-based wrapper on top of the Scala API. PySpark communicates with the Spark Scala-based API via the Py4J library. Py4J isn’t specific to PySpark or Spark. Py4J allows any Python program to talk to JVM-based code.
 
 In a Python context, think of PySpark has a way to handle parallel processing without the need for the threading or multiprocessing modules. All of the complicated communication and synchronization between threads, processes, and even different CPUs is handled by Spark.
-## Disclaimer: Notes scribed from Udacity's course on Introduction to Spark and [this](https://realpython.com/pyspark-intro/) website
